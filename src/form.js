@@ -6,7 +6,7 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
+//import Select from "@mui/material/Select";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
 import TextField from "@mui/material/TextField";
@@ -15,7 +15,7 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { MenuItem, Stack } from "@mui/material";
 import { MobileDatePicker } from "@mui/x-date-pickers/MobileDatePicker";
 
-export const Form = ({ onSubmitOrder}) => {
+export const Form = ({ onSubmitOrder }) => {
   const initialState = {
     orderNum: "",
     shippingDate: null,
@@ -103,7 +103,8 @@ export const Form = ({ onSubmitOrder}) => {
                     renderInput={(params) => <TextField {...params} />}
                   />
                 </LocalizationProvider>
-                <Select
+                <TextField
+                  select
                   name="orderStatus"
                   label="Order Status"
                   value={order.orderStatus}
@@ -114,7 +115,7 @@ export const Form = ({ onSubmitOrder}) => {
                   <MenuItem value="In Production">Production</MenuItem>
                   <MenuItem value="QC Check">QC</MenuItem>
                   <MenuItem value="Ready for Shipment">Completed</MenuItem>
-                </Select>
+                </TextField>
               </FormControl>
             </Stack>
           </Box>
