@@ -20,7 +20,7 @@ export default function App() {
 
       <body className="App-body">
         <BasicTable orders={orders} />
-        <div className="bottomright">
+        <div className="topright">
           <Form onSubmitOrder={onSubmitOrder} />
         </div>
       </body>

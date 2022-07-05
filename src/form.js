@@ -15,7 +15,7 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { MenuItem, Stack } from "@mui/material";
 import { MobileDatePicker } from "@mui/x-date-pickers/MobileDatePicker";
 
-export const Form = ({ onSubmitOrder }) => {
+export const Form = ({ onSubmitOrder}) => {
   const initialState = {
     orderNum: "",
     shippingDate: null,
