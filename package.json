@@ -18,6 +18,8 @@
     "save-dev": "^0.0.1-security"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
@@ -36,6 +38,7 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ]
+    ],
+    "homepage": "https://weiyu95.github.io/project1-bootcamp/"
   }
 }
